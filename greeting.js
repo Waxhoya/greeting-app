@@ -1,7 +1,12 @@
-function greeting(userName){
-    name = userName || 'Tim';
-    console.log('userName');
-    return 'Hello ' + name;
-}
 
-module.exports = greeting;
+module.exports = {
+    greeting: function(userName){
+            name = userName || 'Tim';
+            return 'Hello ' + name;
+        },
+    
+    makeFarewell: function(userName){
+            name = userName || 'Tim';
+            return 'Hello ' + name;
+        }
+};
