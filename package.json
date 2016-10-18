@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eslintrc.js",
+  "scripts": {
+      "pretest": "npm run lint",
+      "test": "mocha R nyan",
+      "test:watch": "mocha -w",
+      "lint": "eslint ../."
+  },
   "dependencies": {
     "eslint": "^3.8.1"
   },
