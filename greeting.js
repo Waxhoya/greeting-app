@@ -1,23 +1,12 @@
-
-var rl = require('readline');
-var prompts = rl.createInterface(process.stdin, process.stdout);
-
+var chalk = require('chalk');
 module.exports = {
     greeting: function(userName){
             name = userName || 'Tim';
-            return 'Hello ' + name;
+            return chalk.blue.bold('Hello ') + name;
         },
     
     makeFarewell: function(userName){
-            name = userName || 'Tim';
-            return 'Hello ' + name;
+            name = userName || 'Anon';
+            return chalk.green('Goodnight ') + name;
         },
-    consoleUser: function() { prompts.question('What is your name?', function(nameInput) {
-        name = nameInput || 'Tim';
-        return 'Hello ' + name;
-        process.exit();
-        })}
-
 };
-
-module.exports.consoleUser();
