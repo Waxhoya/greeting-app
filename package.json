@@ -2,9 +2,12 @@
   "name": "greeting-app",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "pretest": "npm run lint",
+    "test": "mocha -R nyan",
+    "test:watch": "mocha -w",
+    "lint": "eslint"
   },
   "dependencies": {
     "chalk": "^1.1.3",
